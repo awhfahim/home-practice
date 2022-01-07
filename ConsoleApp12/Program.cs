@@ -17,7 +17,7 @@ namespace voweldeclare
             }
             else
             {
-                Console.WriteLine("Invalid");
+                Console.WriteLine("This is not an alphabet");
             }
 
 

@@ -5,37 +5,34 @@
     {
         int a = int.Parse(Console.ReadLine());
 
-        string m = "I hate";
-        string b = "that";
-        string c = "I love";
-        string d = "it";
-        if(a > 2)
+        string m = "I hate that I love that ";
+        string k = "I hate it";
+        int n = 0;
+
+        if (a == 1)
         {
-            for (int i = 0; i < a; i++)
+            Console.WriteLine("I hate it");
+        }
+        else if (a % 2 == 1)
+        {
+            n = a / 2;
+            for(int i = 0; i<n; i++)
             {
-                Console.Write($"{m} {b} {c} {b} ", d);
+                Console.Write(m);
+            }
+            Console.Write(k);
+        }
+        else if (a % 2 == 0)
+        {
+            n = a / 2;
+            for (int i = 0; i < n - 1; i++)
+            {
+                Console.Write(m);
 
             }
+            Console.Write("I hate that I love it");
         }
+
     }
 }
 
-
-
-/* if(a == 1)
-        {
-    Console.WriteLine("I hate it");
-}
-        else if (a == 2)
-{
-    Console.WriteLine("I hate that I love it");
-}
-else if (a == 3)
-{
-    Console.WriteLine("I hate that I love that I hate it");
-}
-else if (a == 4)
-{
-    Console.WriteLine("I hate that I love that I hate that I love it");
-}
-*/

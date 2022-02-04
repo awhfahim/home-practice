@@ -14,7 +14,7 @@ namespace ClassAssignment
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
         
-        public Client(string FirstName, string LastName, string Email, string Address, string PhoneNUmber)
+        public Client(string FirstName, string LastName, string Email, string Address, string PhoneNumber)
         {
             this.FirstName = FirstName;
             this.LastName = LastName;

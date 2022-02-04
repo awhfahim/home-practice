@@ -8,17 +8,19 @@ namespace ClassPractice
 {
     internal class Teacher
     {
-        internal int Age { get; set; }
-        public string Name
+        internal int age { get; set; }
+        internal string ?Name { get; set; }
+
+        internal string ?Address { get; set; }
+
+        internal string ?id { get; set; }
+
+        internal void GenerateNewId()
         {
-            get { return val; }
-            set
-            {
-                if (Name.StartsWith("Md"))
-                    Name = value;
-            }
+           id =  "T-" + DateTime.Now.Ticks;
         }
-        
-        internal string Address { get; set; }
     }
+
 }
+
+

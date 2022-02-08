@@ -6,24 +6,42 @@ class A318
         string[] input = Console.ReadLine().Split();
         long Fnum = Convert.ToInt64(input[0]);
         long Snum = Convert.ToInt64(input[1]);
-        long j = 0;
-        long[] array = new long[Fnum];
-        for(int i = 1; i <= Fnum; i++)
+        //long j = 0;   
+        //long[] array = new long[Fnum];
+        //for(long i = 1; i <= Fnum; i++)
+        //{
+            
+        //}
+        //for(long i = 2; i <= Fnum; i++)
+        //{
+        //    if (i % 2 == 0)
+        //    {
+        //        array[j] = i;
+        //        j++;
+        //    }
+        //}
+        //Console.WriteLine(array[Snum-1]);
+
+        long v = 0;
+        for(long i = 1; i<=Snum; i++)
         {
             if (i % 2 != 0)
             {
-                array[j] = i;
-                j++;
+                v = i;
             }
         }
-        for(int i = 2; i <= Fnum; i++)
+        Console.WriteLine(v);
+        for (long i = 1; i <= Snum; i++)
         {
             if (i % 2 == 0)
             {
-                array[j] = i;
-                j++;
+                v = i;
             }
         }
-        Console.WriteLine(array[Snum-1]);
+        Console.WriteLine(v);
+
     }
 }
+
+
+

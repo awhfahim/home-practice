@@ -11,12 +11,6 @@ class Numrev
         {
             int denominator = number % 10;
             int dividend = number / 10;
-            if (dividend < 10)
-            {
-                dividend = dividend * 10;
-                s = s + dividend;
-            }
-            break;
 
             number = dividend;
 
@@ -24,5 +18,6 @@ class Numrev
         }
         Console.WriteLine(s);
     }
+
 }
 

@@ -7,19 +7,23 @@ class B999
         int Input = int.Parse(Console.ReadLine());
         string S_string = Console.ReadLine();
 
-        char[] array = new char[S_string.Length];
-        int g = 0;
-
-        for(int i = 2; i<=Input; i++)
+        
+        for (int i = 2; i <= Input; i++)
         {
             if (Input % i == 0)
             {
-                for(int j = i-1; j>-1; j--)
+                string b = string.Empty;
+                string a = S_string.Substring(0,i);
+                string d = S_string.Substring(i);
+                for(int j = i - 1; j > -1; j--)
                 {
-                    Console.Write(S_string[j]);
+                    b = b + a[j];
                 }
-                break;
+                S_string = b + d;
+               
             }
+            
         }
+        Console.WriteLine(S_string);
     }
 }

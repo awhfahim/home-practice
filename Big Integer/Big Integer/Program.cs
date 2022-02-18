@@ -67,8 +67,6 @@ class GFG
 	static public void Main()
 	{
 
-		factorial(50);
+		factorial(6);
 	}
 }
-
-// This code is contributed by ajit

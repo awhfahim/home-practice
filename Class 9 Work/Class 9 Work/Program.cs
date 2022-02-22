@@ -1,6 +1,8 @@
 ﻿using Class_9_Work;
 
-PercentageDiscount percentageDiscount = new PercentageDiscount(18);
-//percentageDiscount.Amount = 10;
-double priceAfterDiscount = percentageDiscount.PriceAfterDiscount(2000);
+var percentageDiscount = new PercentageDiscount(18);
+
+var priceAfterDiscount = percentageDiscount.PriceAfterDiscount(2000);
 Console.WriteLine(priceAfterDiscount);
+object a = "Raj";
+a = 8;

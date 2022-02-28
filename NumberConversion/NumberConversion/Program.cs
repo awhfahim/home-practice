@@ -54,14 +54,44 @@ public class Number_Conversion
             m++;
             power--;
         }
+        int dec = (int)sum;
         string Answer = string.Empty;
-        while(sum > 0)
+        while(dec > 0)
         {
-            double D_res = sum / Convert_base;
-            double D_end = sum % D_res;
-            sum = D_res;
-            Answer += Convert.ToString(D_end);
+            int D_res = dec / Convert_base;
+            string D_end = Convert.ToString(dec % Convert_base);
+            switch (D_end)
+            {
+                case "10":
+                    D_end = "A";
+                    break;
+                case "11":
+                    D_end = "B";
+                    break;
+                case "12":
+                    D_end = "C";
+                    break;
+                case "13":
+                    D_end = "D";
+                    break;
+                case "14":
+                    D_end = "E";
+                    break;
+                case "15":
+                    D_end = "F";
+                    break;
+                default:
+                    D_end = D_end;
+                    break;
+            }
+            dec = D_res;
+            Answer += D_end;
         }
-        Console.WriteLine(Answer);
+        string vari = string.Empty;
+        foreach(char c in Answer)
+        {
+             vari = c+vari;
+        }
+        Console.WriteLine(vari);
     }
-}
+} 

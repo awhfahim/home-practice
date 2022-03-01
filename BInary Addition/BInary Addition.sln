@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BInary Addition", "BInary Addition\BInary Addition.csproj", "{0112B0D0-CFB0-4B38-B33D-480B936EF5E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0112B0D0-CFB0-4B38-B33D-480B936EF5E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0112B0D0-CFB0-4B38-B33D-480B936EF5E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0112B0D0-CFB0-4B38-B33D-480B936EF5E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0112B0D0-CFB0-4B38-B33D-480B936EF5E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {801987DB-2E00-4388-8B38-E8B43097A943}
+	EndGlobalSection
+EndGlobal
